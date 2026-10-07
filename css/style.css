@@ -230,6 +230,26 @@ body {
     transition: transform 0.3s ease;
 }
 
+.about-btn:hover {
+    transform: translateY(-3px);
+    /* Button halke se upar uthega */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Soft shadow effect */
+    opacity: 0.92;
+}
+
+/* Active / Click Effect */
+.about-btn:active,
+.lbc-btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.lbc-btn:hover {
+    background-color: #E52323 !important;
+    color: white;
+}
+
 .btn-apply {
     letter-spacing: 0.6px;
     border-radius: 4px;
