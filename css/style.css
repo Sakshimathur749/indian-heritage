@@ -1192,9 +1192,11 @@ form {
         line-height: 30px;
     }
 
-    .bg-cta {
-        height: 550px;
+    .bg-cta,
+    .bg-cta .container .row {
+        height: 100%;
     }
+
 
     /* Image Container ko fixed proportional height provide karta hai */
     .cta-container-img {
