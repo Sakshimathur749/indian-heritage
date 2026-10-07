@@ -244,6 +244,12 @@ body {
     transform: translateY(-2px);
 }
 
+.cta-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #002758 !important;
+}
+
 .btn-apply:active,
 .admission-btn:active {
     transform: translateY(0);
@@ -258,8 +264,8 @@ body {
 
 .hero-container {
     background: linear-gradient(90deg, rgba(0, 51, 102, 0.90) 32%, rgba(0, 51, 102, 0.50) 70.88%, rgba(0, 51, 102, 0.00) 100%);
-    min-height: 85vh;
-    padding: 140px 0 80px 0;
+    min-height: 90vh;
+    padding: 60px 0 80px 0;
 }
 
 .hero-btns {
@@ -444,8 +450,7 @@ form {
 
 .border-bottom-form,
 .contact-info-head,
-.contact-form-head,
-.heading-contact-form {
+.contact-form-head {
     border-bottom: 1px solid #F1F5F9;
 }
 
@@ -1056,6 +1061,13 @@ form {
     width: 569px;
     height: 400px;
     aspect-ratio: 556/385;
+}
+
+.border-left-red {
+    border-left: 4px solid #d9534f;
+    /* Apne theme ka red color code dalen */
+    padding-left: 15px;
+    /* Line aur text ke bich space ke liye */
 }
 
 @media (min-height:768px) {
