@@ -15,16 +15,30 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NF3LC2P6');</script>
+    <!-- End Google Tag Manager -->
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NF3LC2P6" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <nav class="">
         <div class="container nav-container">
             <div class="row">
                 <div class="d-flex align-items-center justify-content-between">
                     <div class="nav-img">
-                        <img src="/images/image 8.webp" class="h-100 w-100 object-fit-contain" alt="Logo">
+                        <img src="images/image 8.webp" class="h-100 w-100 object-fit-contain" alt="Logo">
                     </div>
 
                     <div class="d-none d-md-flex gap-3 ">
@@ -103,7 +117,101 @@
                                 <span class="bg-sixth form-span"></span>
                             </div>
                             <!-- Class name use karein -->
-                            <div class="crm-form-container-48 w-100"></div>
+                            <div class="crm-form-container-48 w-100">
+
+                                <form id="crmLeadForm" class="crm-lead-form">
+
+                                    <div class="row g-3">
+
+                                        <!-- Name -->
+                                        <div class="col-md-6">
+                                            <label for="first_name">Name *</label>
+                                            <input type="text" id="first_name" name="first_name" class="form-control"
+                                                placeholder="Enter your name" required>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="col-md-6">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" id="email" name="email" class="form-control"
+                                                placeholder="Enter your email" required>
+                                        </div>
+
+                                        <!-- Phone -->
+                                        <div class="col-md-6">
+                                            <label for="phone">Phone Number *</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="Enter phone number" maxlength="10" required>
+                                        </div>
+
+                                        <!-- State -->
+                                        <div class="col-md-6">
+                                            <label for="state">State *</label>
+                                            <select id="state" name="state" class="form-select" required>
+                                                <option value="">Select State</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Haryana">Haryana</option>
+                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Punjab">Punjab</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Jharkhand">Jharkhand</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- City -->
+                                        <div class="col-md-6">
+                                            <label for="city">City *</label>
+                                            <input type="text" id="city" name="city" class="form-control"
+                                                placeholder="Enter your city" required>
+                                        </div>
+
+                                        <!-- Class -->
+                                        <div class="col-md-6">
+                                            <label for="course">Select Class *</label>
+                                            <select id="course" name="course" class="form-select" required>
+                                                <option value="">Select Class</option>
+                                                <option value="Nursery">Nursery</option>
+                                                <option value="LKG">LKG</option>
+                                                <option value="UKG">UKG</option>
+                                                <option value="Class 1">Class 1</option>
+                                                <option value="Class 2">Class 2</option>
+                                                <option value="Class 3">Class 3</option>
+                                                <option value="Class 4">Class 4</option>
+                                                <option value="Class 5">Class 5</option>
+                                                <option value="Class 6">Class 6</option>
+                                                <option value="Class 7">Class 7</option>
+                                                <option value="Class 8">Class 8</option>
+                                                <option value="Class 9">Class 9</option>
+                                                <option value="Class 10">Class 10</option>
+                                                <option value="Class 11">Class 11</option>
+                                                <option value="Class 12">Class 12</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Submit -->
+                                        <div class="col-12">
+                                            <button type="submit" id="crmSubmitBtn" class="btn btn-primary">
+                                                Submit
+                                            </button>
+                                        </div>
+
+                                        <!-- Messages -->
+                                        <div class="col-12">
+                                            <div id="crmFormMessage"></div>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -806,7 +914,101 @@
                             </div>
 
                             <!-- Class name use karein -->
-                            <div class="crm-form-container-48 w-100 flex-grow-1"></div>
+                            <div class="crm-form-container-48 w-100">
+
+                                <form id="crmLeadForm" class="crm-lead-form">
+
+                                    <div class="row g-3">
+
+                                        <!-- Name -->
+                                        <div class="col-md-6">
+                                            <label for="first_name">Name *</label>
+                                            <input type="text" id="first_name" name="first_name" class="form-control"
+                                                placeholder="Enter your name" required>
+                                        </div>
+
+                                        <!-- Email -->
+                                        <div class="col-md-6">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" id="email" name="email" class="form-control"
+                                                placeholder="Enter your email" required>
+                                        </div>
+
+                                        <!-- Phone -->
+                                        <div class="col-md-6">
+                                            <label for="phone">Phone Number *</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control"
+                                                placeholder="Enter phone number" maxlength="10" required>
+                                        </div>
+
+                                        <!-- State -->
+                                        <div class="col-md-6">
+                                            <label for="state">State *</label>
+                                            <select id="state" name="state" class="form-select" required>
+                                                <option value="">Select State</option>
+                                                <option value="Delhi">Delhi</option>
+                                                <option value="Haryana">Haryana</option>
+                                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                                <option value="Maharashtra">Maharashtra</option>
+                                                <option value="Punjab">Punjab</option>
+                                                <option value="Rajasthan">Rajasthan</option>
+                                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                                <option value="Uttarakhand">Uttarakhand</option>
+                                                <option value="Gujarat">Gujarat</option>
+                                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                                <option value="Bihar">Bihar</option>
+                                                <option value="Jharkhand">Jharkhand</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- City -->
+                                        <div class="col-md-6">
+                                            <label for="city">City *</label>
+                                            <input type="text" id="city" name="city" class="form-control"
+                                                placeholder="Enter your city" required>
+                                        </div>
+
+                                        <!-- Class -->
+                                        <div class="col-md-6">
+                                            <label for="course">Select Class *</label>
+                                            <select id="course" name="course" class="form-select" required>
+                                                <option value="">Select Class</option>
+                                                <option value="Nursery">Nursery</option>
+                                                <option value="LKG">LKG</option>
+                                                <option value="UKG">UKG</option>
+                                                <option value="Class 1">Class 1</option>
+                                                <option value="Class 2">Class 2</option>
+                                                <option value="Class 3">Class 3</option>
+                                                <option value="Class 4">Class 4</option>
+                                                <option value="Class 5">Class 5</option>
+                                                <option value="Class 6">Class 6</option>
+                                                <option value="Class 7">Class 7</option>
+                                                <option value="Class 8">Class 8</option>
+                                                <option value="Class 9">Class 9</option>
+                                                <option value="Class 10">Class 10</option>
+                                                <option value="Class 11">Class 11</option>
+                                                <option value="Class 12">Class 12</option>
+                                            </select>
+                                        </div>
+
+                                        <!-- Submit -->
+                                        <div class="col-12">
+                                            <button type="submit" id="crmSubmitBtn" class="btn btn-primary">
+                                                Submit
+                                            </button>
+                                        </div>
+
+                                        <!-- Messages -->
+                                        <div class="col-12">
+                                            <div id="crmFormMessage"></div>
+                                        </div>
+
+                                    </div>
+
+                                </form>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -970,48 +1172,155 @@
         })();
     </script>
     <script>
-        (function () {
-            // Query all containers with class 'crm-form-container-48'
-            var containers = document.querySelectorAll('.crm-form-container-48');
+        document.addEventListener("DOMContentLoaded", function () {
 
-            if (containers.length > 0) {
-                var baseUrl = 'http://crm.mediagarh.com/CRM/forms/public/48';
-                var currentUrl = window.location.href;
-                var iframeSrc = baseUrl + '?embed=1&landing_url=' + encodeURIComponent(currentUrl);
+            const form = document.getElementById("crmLeadForm");
+            const submitBtn = document.getElementById("crmSubmitBtn");
+            const message = document.getElementById("crmFormMessage");
 
-                containers.forEach(function (container, index) {
-                    var iframe = document.createElement('iframe');
-                    iframe.id = 'crm-form-48-' + index; // Unique ID for each iframe
-                    iframe.className = 'crm-iframe-instance';
-                    iframe.src = iframeSrc;
-                    iframe.width = '100%';
-                    iframe.height = '100%';
-                    iframe.style.minHeight = '480px';
-                    iframe.style.maxHeight = '600px';
-                    iframe.frameBorder = '0';
-                    iframe.style.border = '0';
-                    iframe.style.background = 'transparent';
+            if (!form) return;
 
-                    /* Scrolling settings */
-                    iframe.style.overflowX = 'hidden';
-                    iframe.style.overflowY = 'auto';
-                    iframe.setAttribute('scrolling', 'yes');
+            form.addEventListener("submit", async function (e) {
 
-                    container.appendChild(iframe);
-                });
-            }
-        })();
+                e.preventDefault();
 
-        /* PostMessage listener to resize all iframe instances */
-        window.addEventListener('message', function (e) {
-            if (e.data && e.data.height) {
-                var iframes = document.querySelectorAll('.crm-iframe-instance');
-                iframes.forEach(function (iframe) {
-                    iframe.style.height = e.data.height + 'px';
-                });
-            }
+                submitBtn.disabled = true;
+                submitBtn.innerText = "Submitting...";
+                message.innerHTML = "";
+
+                const formData = new FormData(form);
+
+                // Get UTM parameters from URL
+                const params = new URLSearchParams(window.location.search);
+
+                // Get form values
+                const firstName = formData.get("first_name") || "";
+                const email = formData.get("email") || "";
+                const phone = formData.get("phone") || "";
+                const state = formData.get("state") || "";
+                const city = formData.get("city") || "";
+                const course = formData.get("course") || "";
+
+                // CRM API Payload
+                const data = {
+
+                    form_id: 48,
+
+                    first_name: firstName,
+                    last_name: "",
+
+                    email: email,
+                    phone: phone,
+
+                    utm_source: params.get("utm_source") || "",
+                    utm_medium: params.get("utm_medium") || "",
+                    utm_campaign: params.get("utm_campaign") || "",
+
+                    landing_url: window.location.href,
+                    referrer_url: document.referrer || "",
+
+                    custom_fields: {
+
+                        "field_field_1791370223354_gr4tl": {
+                            label: "Name",
+                            type: "text",
+                            value: firstName,
+                            map_to: "first_name"
+                        },
+
+                        "field_field_1791370224704_12gpl": {
+                            label: "Email Address",
+                            type: "email",
+                            value: email,
+                            map_to: "email"
+                        },
+
+                        "field_field_1791370225453_kzuvn": {
+                            label: "Phone Number",
+                            type: "phone",
+                            value: phone,
+                            map_to: "phone_number"
+                        },
+
+                        "field_field_1791370231703_lflg0": {
+                            label: "State",
+                            type: "india_state",
+                            value: state,
+                            map_to: "state"
+                        },
+
+                        "field_field_1791370232888_850fu": {
+                            label: "City",
+                            type: "india_city",
+                            value: city,
+                            map_to: "city"
+                        },
+
+                        "field_field_1791370238237_tjxp1": {
+                            label: "Select Class",
+                            type: "select",
+                            value: course,
+                            map_to: "course"
+                        }
+
+                    }
+                };
+
+                try {
+
+                    const response = await fetch(
+                        "https://crm.mediagarh.com/CRM/api/leads/create",
+                        {
+                            method: "POST",
+
+                            headers: {
+                                "Content-Type": "application/json",
+                                "X-Api-Key": "b62d20f5cd5e82d3ee1cfe7fc85cccbbe43db37e36830923557c912602afe023"
+                            },
+
+                            body: JSON.stringify(data)
+                        }
+                    );
+
+                    const result = await response.json();
+
+                    console.log("CRM Response:", result);
+
+                    if (response.ok && result.success !== false) {
+
+                        window.location.href = "https://ihspathankot.com/thank-you/";
+
+                    } else {
+
+                        throw new Error(
+                            result.message || "Unable to submit the form."
+                        );
+
+                    }
+
+                } catch (error) {
+
+                    console.error("CRM API Error:", error);
+
+                    message.innerHTML = `
+                <div class="alert alert-danger">
+                    Something went wrong. Please try again.
+                </div>
+            `;
+
+                } finally {
+
+                    submitBtn.disabled = false;
+                    submitBtn.innerText = "Submit";
+
+                }
+
+            });
+
         });
     </script>
+
+
 </body>
 
 </html>
